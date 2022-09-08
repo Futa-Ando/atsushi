@@ -1,0 +1,6 @@
+<h2>ハッシュタグ #<%= @tag.hashname %></h2>
+  <ul>
+    <% @maps.each do |t| %>
+        <%= render_with_hashtags(@t.caption) %>
+    <% end %>
+  </ul>
